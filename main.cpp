@@ -33,7 +33,7 @@ enum CommandPoolUsage {
 
 // Buggy in "kResetEveryFrame" mode
 // okay in "kRecreateEveryFrame" and "kFreeCommandBufferInstead" modes
-static constexpr CommandPoolUsage kCommandPoolUsage = CommandPoolUsage::kRecreateEveryFrame;
+static constexpr CommandPoolUsage kCommandPoolUsage = CommandPoolUsage::kResetEveryFrame;
 
 struct QueueFamilyIndices {
     std::optional<uint32_t> graphics;
